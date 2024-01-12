@@ -1,0 +1,21 @@
+[package]
+name = "bjj_scoreboard"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "bjj_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "bjj_scoreboard"
+path = "src/main.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+fake = {  version = "2.9.2", features = ["derive"] }
+rand = { version = "0.8.5", features = [] }
+thiserror = { version = "1.0.56", features = [] }
+
+[dev-dependencies]
+anyhow = "1.0.79"
